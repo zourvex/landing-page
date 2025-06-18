@@ -1,8 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-div{
+.fullpage{
+    width: 100%;
+    height: 100%;
     border-width: normal;
     border-style: solid;
     border-color: blue;
@@ -11,21 +14,21 @@ div{
 }
 
 .navy{
-    display: flex;
+    width: 100%;
     height: 300px;
     padding: 10px;
     background-color:#1F2937;
     color:white;
     font-family: 'Roboto';
+    flex-wrap: wrap;
 }
 
 .header_info{
     display: flex;
-    flex: 1;
     width: 100%;
     height: 10%;
-    margin-left:50px;
-    margin-right:50px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .header_logo{
@@ -53,10 +56,8 @@ div{
 }
 
 .awesome{
-    background-color:yellow;
-    width: 100%;
-    flex-direction: column;
-    margin-left:50px;
-    margin-right:50px;
-    
+    background-color:powderblue;
+    flex-basis: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
 }
